@@ -12,5 +12,17 @@ header{
 }
 
 nav ol{
-    
+    color: black;
+    padding:0;
+    margin : 50px;
+
+}
+nav ol li{
+    display: inline;
+    margin :50px;
+
+}
+.hover-effect{
+    color : bisque;
+
 }
