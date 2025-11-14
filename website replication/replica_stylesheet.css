@@ -26,3 +26,17 @@ nav ol li{
     color : bisque;
 
 }
+
+.background-image{
+    background-image: url('corporate_lady.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+}
+
+left_button{
+    background-color: linear-gradient(to-right,white);
+    color: black;
+    padding: 10px;
+}
