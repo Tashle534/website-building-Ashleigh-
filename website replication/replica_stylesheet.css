@@ -37,11 +37,13 @@ nav ol{
 }
 nav ol li{
     display: inline;
-    margin :50px;
+    margin-right: 60px;
+    font-size : 15px;
+    cursor : pointer;
 
 }
 .hover-effect{
-    color : bisque;
+    color : rgb(103, 98, 93);
 
 }
 
@@ -81,15 +83,24 @@ button{
     margin-left: 10px;
 }
 
-li button{
-    background-color: white;
-    border-style : solid;
-    border-color : black;
-    padding : 5px;
-    font-size : 15px;
-    cursor : pointer;
+
+@media(max-width:1200px){
+    button {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 10px;
+        color: black;
+        background-color: wheat;
+    }
 }
 
+
+
+
+li:hover{
+    background-color: rgb(136, 133, 131);
+    color : white;
+
+}
 
 h1 {
     font-size: 40px;
@@ -110,8 +121,6 @@ section {
     margin : 10px;
     background-color: white ;
     border-radius : 50px;
-    
-
     
 
 }
