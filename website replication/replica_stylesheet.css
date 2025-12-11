@@ -2,7 +2,7 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #a8a7a7;
+    background-color:#ffffff;
     color : black;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -11,31 +11,54 @@ header{
     padding: 5px;
     text-align: center;
     background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
     font-size : 15px;
     border-radius : 50px;
-    
+    margin : 10px;
+
 
 }
 
-header button{
+/* header button{
     margin-left: 10px;
-    background-color: white;
+    background-color: black;
     border-style : solid;
     border-color : black;
     padding : 10px;
     font-size : 15px;
     cursor : pointer;
     position : inherit;
-    
+} */
 
+
+.link-white{
+color:white
+}
+
+.link-black{
+    color:black
+}
+
+.font-effect{
+    font-family: 'Times New Roman', Times, serif;
+    font-size : 20px;
+    color : black;
+}
+
+.black-button{
+    background-color: black;
+}
+.white-button{
+    background-color: white;
+    
 }
 #div1{
-    color: orange;
-    background-color: lightblue;
+    color: black;
+    background-color: wheat;
     border-radius : 50px;
 }
 nav ol{
-    color: black;
     padding:0;
     margin : 50px;
 
@@ -48,10 +71,16 @@ nav ol li{
 
 }
 .hover-effect{
-    color : rgba(206, 165, 124, 0.679);
+    color : rgba(169, 164, 159, 0.679);
 
 }
+.logo{
+    position : absolute;
+    top : 10px;
+    left : 10px;
+    
 
+}
 .background-image{
     background-image: url('soft_blur.jpg');
     background-size: cover;
@@ -89,7 +118,13 @@ button{
     margin-left: 10px;
 }
 
+.menu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size : 10px;
+    cursor : pointer;
+    position : inherit;
 
+}
 @media(max-width:1000px){
     button {
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -112,15 +147,14 @@ a:active{
 a:hover{
     color: rgb(66, 156, 225);
 }
-
-a:visited{
-    color:blueviolet
-}
-
-
-li:hover{
+.ol-links{
+    a:visited{
+    color:rgb(0, 0, 0)
+    };
+    li:hover{
     background-color: rgba(223, 160, 117, 0.7);
     color : lightgray;
+    }
 }
 
 h1 {
