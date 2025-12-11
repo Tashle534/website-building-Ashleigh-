@@ -2,7 +2,7 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color:#99582a;
+    background-color:#DDA15E;
     color : black;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -15,7 +15,7 @@ header{
     font-weight: normal;
     font-size : 15px;
     border-radius : 50px;
-    margin : 10px;
+    margin : 20px;
 
 
 }
@@ -169,7 +169,7 @@ h1 {
 
 section {
     padding : 10px;
-    margin : 10px;
+    margin : 20px;
     background-color: white ;
     border-radius : 50px;
     
@@ -193,7 +193,6 @@ section div button{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     padding : 10px;
-    margin : 10px;
     position : left;
     
 }
@@ -202,6 +201,8 @@ section div button{
     padding : 10px;
     margin : 10px;
     position: center;
+    margin-left: 50px;
+
     
 }
 .footer-links a{
@@ -212,17 +213,22 @@ section div button{
 .footer-links a:hover{
     color : black;
 }
+.footer-logo{
+    position : relative;
+    bottom : 10px;
+    right: 10px;
+    height: 10px;
+    width : 10px;
+}
 
 .social-media {
-    width: 10px;
-    height: 10px;
-    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
     position : right;
 }
 .social-media a{
-    margin: 10px;
     color : black;
-
 }
 .social-media img {
     width : 10px;
