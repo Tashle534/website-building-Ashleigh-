@@ -1,0 +1,288 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#DDA15E;
+    color : black;
+    font-family: Arial, Helvetica, sans-serif;
+    display : grid;
+    grid-template-columns: fit-content(100%);
+    grid-template-rows: auto;
+
+}
+/* header styling starts here */
+header{
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size : 15px;
+    border-radius : 50px;
+    margin : 20px;
+
+}
+/* button styling with link in header */
+.link-white{
+color:white
+}
+
+.link-black{
+    color:black
+}
+/* header fonts */
+.font-effect{
+    font-family: 'Times New Roman', Times, serif;
+    font-size : 20px;
+    color : black;
+}
+/* button colours */
+.black-button{
+    background-color: black;
+}
+.white-button{
+    background-color: white;
+    
+}
+/* navigation bar styling */
+/*nav bar list styling*/
+nav ol{
+    padding:0;
+    margin : 50px;
+
+}
+nav ol li{
+    display: inline;
+    margin-right: 60px;
+    font-size : 15px;
+    cursor : pointer;
+
+}
+/* logo styling */
+.logo{
+    position : relative;
+    top : 10px;
+    left : 10px;
+    height: 10px;
+    width : 10px;
+}
+
+.background-image{
+    background-image: url('view.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    opacity: background-image 0.5;
+}
+
+.left_button{
+    background-color: #FEFAE0;
+    color: white;
+    padding: 10px;
+    position: inherit;
+    border-radius : 50px;
+    margin : 10px;
+}
+.left_button :hover{
+    color: black;
+
+}
+#div1{
+    color: black;
+    background-color: wheat;
+    border-radius : 50px;
+}
+.left_button a{
+    text-decoration: none;
+    color : black;
+}
+section button{
+    position : inherit;
+    color : black;
+    padding: 10px;
+    margin :15px;
+    border-radius : 50px;
+    size : small;
+}
+
+button{
+    position : inherit;
+    color : black;
+    padding: 5px;
+    border-radius : 50px;
+    size : small;
+    margin-left: 10px;
+}
+
+.menu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size : 10px;
+    cursor : pointer;
+    position : inherit;
+
+}
+@media(max-width:1200px){
+    button {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 10px;
+        color: black;
+        background-color: wheat;
+    }
+
+}
+
+@media(min-width:800px){
+    #div1{
+        display: flexbox;
+    }
+}
+
+a:active{
+    color:#2c92ce;
+}
+
+a:hover{
+    color: rgb(15, 16, 16);
+}
+.ol-links{
+    a:visited{
+    color:rgb(0, 0, 0)
+    };
+    li:hover{
+    background-color: rgb(212, 203, 197);
+    color : lightgray;
+    }
+}
+
+h1 {
+    font-size: 40px;
+    padding : 0px;
+    
+}
+
+section {
+    padding : 10px;
+    margin : 20px;
+    background-color: white ;
+    border-radius : 50px;
+    
+}
+
+section div button{
+    background-color: #FEFAE0;
+    position : inherit;
+    padding: 10px;
+    margin :15px;
+    border-radius : 50px;
+}
+/* footer styling starts here */
+
+footer{
+    background-color: white;
+    border-radius : 50px;
+    margin : 20px;
+    padding : 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size : 15px;
+    display: grid;
+    grid-template-columns : 3fr 1fr 1fr 1fr;
+    grid-template-rows : auto;
+}
+.footer-background{
+    padding : 10px;
+    margin : 10px;
+    display : flex;
+    justify-content: space-evenly;
+    align-items: left;
+    flex-flow: row wrap;
+    
+}
+
+.footer-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding : 0px;
+    position : left;
+    
+}
+
+.footer-links{
+    font-size: 12px;
+    padding : 10px;
+    margin : 10px;
+    position: center;
+    margin-left: 50px;
+    
+    
+}
+.footer-links li {
+    display : inline;
+    float : right;
+    text-decoration: none;
+    gap : 1rem;
+
+}
+.footer-link li a:hover{
+    text-decoration: none;
+    color : black
+}
+.footer-links a{
+    margin: 10px;
+    color : black;
+    ;
+}
+.footer-links a:hover{
+    color : black;
+}
+.footer-logo{
+    position : relative;
+    bottom : 10px;
+    right: 10px;
+    height: 50px;
+    width : 50px;
+    
+}
+
+.social-media {
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+    position : right;
+}
+.social-media a{
+    color : black;
+}
+.social-media img {
+    width : 15px;
+    height : 30px;
+}
+
+@media(max-width:1200px){
+    .sidebar{
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    font-family: sans-serif;
+    font-size  : 15px;
+    .sidebar a{
+        color: white ;
+        text-decoration-line: none;;
+        padding: 10px;
+    }
+
+    background-color: #545e31;
+    padding-top: 15px;
+    }
+    .footer-text{
+        font-size: 15px;
+        
+    }
+    .footer-links{
+        font-size: 10px;
+    }
+    }
+

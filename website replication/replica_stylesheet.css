@@ -5,6 +5,8 @@ body{
     background-color:#DDA15E;
     color : black;
     font-family: Arial, Helvetica, sans-serif;
+    display : flex;
+    flex-direction : column;
 }
 
 header{
@@ -186,7 +188,6 @@ section div button{
 .footer-background{
     padding : 10px;
     margin : 10px;
-    
 }
 
 .footer-text{
@@ -196,19 +197,18 @@ section div button{
     position : left;
     
 }
+
 .footer-links{
     font-size: 12px;
     padding : 10px;
     margin : 10px;
     position: center;
     margin-left: 50px;
-
     
 }
 .footer-links a{
     margin: 10px;
     color : black;
-
 }
 .footer-links a:hover{
     color : black;
@@ -249,7 +249,6 @@ section div button{
         color: white ;
         text-decoration-line: none;;
         padding: 10px;
-
     }
 
     background-color: #545e31;
