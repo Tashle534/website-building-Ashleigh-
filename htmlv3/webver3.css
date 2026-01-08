@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    /* font-family: Arial, Helvetica, sans-serif */
+    font-size: 20px;
+    
 }
 
 /* =========================
@@ -13,14 +16,13 @@ body {
     background-color: #BC6C25;
     color: black;
     line-height : 1.4em;
-
     /* FIXED: removed duplicate font-family */
     font-family: Arial, Helvetica, sans-serif;
-
     /* FIXED: grid now actually does something */
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     gap: 20px;
+    
 }
 
 /* =========================
@@ -28,18 +30,33 @@ body {
    ========================= */
 
 header {
-    padding: 50px;
+    padding: 30px;
     text-align: center;
+    font-size: 4.5rem;
     background-color: #DDA15E;
-    font-size: 15px;
     border-radius: 50px;
     margin: 20px;
+    z-index: 3;
+    /*display : grid;
+    gap: 15px;*/
+}
+.h1-style {
+    font-size : 3.5rem;
+    align-items: center;
+    color: black;
+    text-decoration: underline;
 }
 
-/* FIXED: cleaner font utility */
-.font-effect {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+
+.logo {
+    width: 800px;
+    height: auto;
+    display: grid;
+    align-content: flex-start;
+    margin-top : -10px;
+    margin-left : -10px;
+    z-index: 2;
+
 }
 
 /* =========================
@@ -52,7 +69,7 @@ a {
 }
 
 a:hover {
-    color: rgb(15, 16, 16);
+    color: #737f4d;
 }
 
 a:active {
@@ -72,8 +89,6 @@ button {
     border-radius: 50px;
     border: none;
     cursor: pointer;
-
-    /* FIXED: removed invalid size property */
     font-size: 12px;
 }
 
@@ -91,19 +106,21 @@ button {
 }
 
 .white-button a :hover {
-    color: rgb(36, 36, 3);
+    color: black;
 }
 /* =========================
     NAVIGATION
    ========================= */
 
-nav ol {
-    margin: 50px;
+header > nav ol {
+    margin-top: -45px  ;
+    margin-left : 80px;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 20px;
+    grid-auto-rows: minmax(30px, auto);
 
-    /* FIXED: flex instead of inline hacks */
-    display: flex;
-    gap: 60px;
 }
 
 nav ol li {
@@ -113,47 +130,83 @@ nav ol li {
 }
 
 /* =========================
-    HERO / BACKGROUND IMAGE
-   ========================= */
-
-.background-image {
-    background-image: url('view.png');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    position: relative;
-
-    /* FIXED: valid opacity usage */
-    opacity: 0.85;
-}
-
-/* =========================
     SECTIONS
    ========================= */
+.backgroung-img-section {
+    text-align : center ;
+    width : 200px;
+    height : auto ;
+}
 
 section {
     margin: 20px;
     padding: 20px;
-    background-color: white;
+    background-color: #DDA15E;
     border-radius: 50px;
-
     /* FIXED: grid for internal layout */
     display: grid;
-    gap: 15px;
+    gap :50px;
+    justify-content: center;
+    
 }
 
 section button {
-    background-color: #FEFAE0;
+    background-color: wheat;
+    margin : 10px
+    
+}
+article {
+    display: grid;
+    place-content:right;
+    margin-top : 10px ;
+}
+article img{
+    width : 30% ;
+    height : auto ;
+    border-radius: 50px;
 }
 
-section div span{
+section>div>span>a {
     text-align : left ;
+    font-size :15px;
+
+}
+.h2-style {
+    font-size : 3.5em;
+    align-items: center;
+    color: black;
+    text-decoration: underline;
+
+}
+.learn-more-button a {
+    color : black;
+    align-items: left;
+    font-size : 15px;
+
+}
+.learn-more-button a:hover {
+    color : white;
+}
+
+.marketing-team-image {
+    width : 50% ;
+    height : auto ;
+    border-radius: 50px;
+}
+
+.text-container{
+    margin-top : -50px;
+    margin-bottom : 50px;
+    text-align : center ;
+    background-color: #606C38;
+    border-radius: 50px;
+    padding : 20px;
 }
 
 
 /* FIXED: proper flex usage instead of inherit */
 #div1 {
-    background-color: wheat;
+    display: flex;
     border-radius: 50px;
     padding: 20px;
 }
@@ -168,8 +221,8 @@ section div span{
 }
 
 .ol-links li:hover {
-    background-color: rgb(212, 203, 197);
-    color: lightgray;
+    background-color: #737f4d;
+    color: black;
 }
 
 /* =========================
@@ -177,21 +230,19 @@ section div span{
    ========================= */
 
 footer {
-    background-color: white;
+    background-color: #DDA15E;
     border-radius: 50px;
     margin: 20px;
     padding: 20px;
-
     /* FIXED: proper grid usage */
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-
     font-size: 15px;
 }
 
 .footer-text {
-    font-size: 20px;
+    font-size: 10px;
 }
 
 /* FIXED: flex instead of floats */
@@ -209,7 +260,7 @@ footer {
 .footer-links a:hover {
     text-decoration: underline;
     color : rgb(18, 32, 1);
-    background-color:rgb(95, 118, 63) ;
+    background-color:#737f4d ;
 }
 
 /* =========================
@@ -219,11 +270,21 @@ footer {
 .social-media {
     display: flex;
     gap: 10px;
+    justify-content :last baseline;
+    margin-right : -200px;
+    margin-top: 120px;
+    font-size: 10px;
+    text-align: right;
 }
 
 .social-media img {
-    width: 15px;
-    height: 15px;
+    display: grid;
+    grid-template-rows:auto ;
+    width: 50px;
+    height: auto;
+    text-align: right;
+    margin-right: auto;
+
 }
 
 /* =========================
@@ -231,11 +292,16 @@ footer {
    ========================= */
 
 @media (max-width: 1200px) {
+    body{
+        line-height: 1.3em;
+
+
+    }
     .sidebar {
         position: fixed;
         top: 0;
         left: 0;
-        width: 150px;
+        width: 200px;
         height: 100%;
         background-color: #545e31;
         padding-top: 15px;
@@ -247,6 +313,7 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        z-index: 1;
     }
 
     /* FIXED: removed illegal nesting */
@@ -259,15 +326,16 @@ footer {
     }
     nav ol {
         list-style-type:disc; ;
-        margin: 20px;
-        padding: 0;
+        margin-left: 20px;
+        padding: 20;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
 
     footer {
         grid-template-columns: 1fr 1fr;
     }
+
 }
 
 /* =========================
