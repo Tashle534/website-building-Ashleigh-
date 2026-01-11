@@ -294,9 +294,32 @@ footer {
 @media (max-width: 1200px) {
     body{
         line-height: 1.3em;
-
-
     }
+
+    .main-container{
+        width:80%;
+        margin: auto;
+        position: sticky;
+        z-index: 1;
+    }
+    .sidebar{
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        background-color: #545e31;
+        padding-top: 15px;
+        font-size: 15px;
+        color: white;
+        top: 0;
+        /*display:  flex for vertical layout*/
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 0;
+    }
+    
+    }
+/*
     .sidebar {
         position: fixed;
         top: 0;
@@ -309,12 +332,13 @@ footer {
         font-size: 15px;
         color: white;
 
-        /* FIXED: flex for vertical layout */
+        /* FIXED: flex for vertical layout 
         display: flex;
         flex-direction: column;
         gap: 10px;
         z-index: 1;
     }
+    */
 
     /* FIXED: removed illegal nesting */
     .sidebar a {
@@ -336,7 +360,6 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
 
-}
 
 /* =========================
 RESPONSIVE BUTTONS
